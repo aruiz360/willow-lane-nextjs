@@ -5,6 +5,18 @@ export const metadata = {
   description: 'Access important financial information and SEC filings for Willow Lane Acquisition Corporation.',
 }
 
+// Add new component for governance documents
+const DownloadDocument = ({ title, pdfUrl }) => (
+  <a 
+  href={pdfUrl}
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-heading-mobile md:text-heading text-gray-dark hover:text-primary font-bold py-3 px-6 transition-colors duration-200 font-haboro uppercase"
+  >
+    {title}
+  </a>
+);
+
 export default function InvestorRelations() {
   return (
     <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
@@ -24,6 +36,11 @@ export default function InvestorRelations() {
         >
           View SEC Filings
         </a>
+        <hr className="py-4 my-4"></hr>
+        <DownloadDocument
+          title="View 2024 PIFC ANNUAL STATEMENT" 
+          pdfUrl="/documents/Willow Lane Acquisition Corp 2024 Class A PFIC Annual Information Statement.pdf" 
+        />
       </div>
     </div>
   )
