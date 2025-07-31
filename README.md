@@ -87,6 +87,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+Alternatively:
+use PM2 daemon
+```
+pm2 start npm --name "willow-lane" -- start
+```
+
 ## Contributing
 
 1. Fork the project
