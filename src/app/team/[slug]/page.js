@@ -94,6 +94,18 @@ const teamMembers = {
       ],
       photo: '/team/Rayne Steinberg Photo.jpg'
     },
+    'simon-gaviria': {
+      name: 'Simón Gaviria',
+      title: 'Director',
+      bio: [
+        "Former director of National Planning for Colombia, where he was responsible for the investment budget for the country.",
+        "He has served on the boards of Ecopetrol, the Colombian Coffee Federation, the energy regulator, water regulator, telecom regulator, and the national mining agency.",
+        "From 2006 to 2014, Simon Gaviria was a member of the House of Representatives of Colombia.",
+        "Simon began his career as an investment banking analyst at J.P. Morgan in New York City.",
+        "He holds a BA from the University of Pennsylvania in economics and an MPA from Harvard."
+      ],
+      photo: '/team/simon-gaviria.jpg'
+    },
     'lorne-weil': {
       name: 'Lorne Weil',
       title: 'Advisor',

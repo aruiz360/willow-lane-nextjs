@@ -87,6 +87,12 @@ export default function TeamAccordion() {
       slug: "rayne-steinberg"
     },
     {
+      name: "Simón Gaviria",
+      title: "Director",
+      description: "Simon Gaviria, former Director of National Planning for Colombia, oversaw the nation’s investment budget and served on several major boards. A former congressman, he began his career at J.P. Morgan and holds degrees from the University of Pennsylvania and Harvard.",
+      slug: "simon-gaviria"
+    },
+    {
       name: "Lorne Weil",
       title: "Advisor",
       description: "Lorne serves as an advisor to the Company. Mr. Weil has served as the Executive Chairman of Inspired Entertainment, Inc. (“Inspired”) since the consummation of its business combination that created the current Inspired Entertainment, Inc. in December 2016. Mr. Weil was the co-sponsor and founder of Inspired's predecessor, Hydra Industries, and served as its Chairman and Chief Executive Officer since its formation in 2014.",
