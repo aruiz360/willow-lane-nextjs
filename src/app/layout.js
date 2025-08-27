@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import { PhoneIcon, EnvelopeIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 // Navigation Items Component
 const NavItems = ({ mobile }) => (
@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className="flex flex-col min-h-screen bg-white font-source-sans">
         <header className="w-full bg-white border-b border-primary">
-          <nav className="container mx-auto py-2">
-            <div className="flex justify-between lg:justify-start px-4 lg:px-2 gap-24 items-center h-48">
+          <nav className="container mx-auto">
+            <div className="flex justify-between lg:justify-start px-4 lg:px-2 gap-24 items-center h-[120px] lg:h-[160px]">
               {/* Logo */}
               <Link href="/" className="relative">
-                <div className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px]">
+                <div className="relative w-[160px] md:w-[220px] aspect-[16/9]">
                   <Image 
                     src="/logo_sin_margenes.png" 
                     alt="Company Logo" 
@@ -39,14 +39,14 @@ export default function RootLayout({ children }) {
               </Link>
 
               {/* Desktop Navigation */}
-              <ul className="hidden lg:flex lg:flex-wrap items-center gap-4 text-heading w-full justify-between font-haboro text-primary">
+              <ul className="hidden xl:flex xl:flex-wrap items-center gap-4 text-heading w-full justify-between font-haboro text-primary">
                 <NavItems />
               </ul>
 
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 text-primary ml-auto"
+                className="xl:hidden px-2 text-primary ml-auto"
                 aria-label="Toggle mobile menu"
               >
                 {isMobileMenuOpen ? (
@@ -59,8 +59,8 @@ export default function RootLayout({ children }) {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-              <div className="lg:hidden bg-white border-t">
-                <ul className="flex flex-col py-4 px-4 font-haboro text-heading-mobile text-primary">
+              <div className="xl:hidden bg-white border-t">
+                <ul className="flex flex-col py-5 px-4 font-haboro text-heading-mobile text-primary">
                   <NavItems mobile={true} />
                 </ul>
               </div>
@@ -85,8 +85,8 @@ export default function RootLayout({ children }) {
                 </p>
               </div>
             </div>
-            <Image src="/logo_nav.png" alt="Company Logo" width={300} height={300} className="hidden md:block" />
-            <Image src="/logo_nav.png" alt="Company Logo" width={200} height={200} className="block md:hidden mt-6" />
+            <Image src="/logo_nav.png" alt="Company Logo" width={250} height={200} className="hidden md:block" />
+            <Image src="/logo_nav.png" alt="Company Logo" width={180} height={100} className="block md:hidden mt-6" />
           </div>
         </footer>
       </body>

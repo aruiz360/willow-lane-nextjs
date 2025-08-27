@@ -66,6 +66,22 @@ function PastPerformanceSection() {
   );
 }
 
+// Financial Elements
+const FinanceLink = ({title}) => (
+  <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
+    <div>
+      <p className="text-body-mobile md:text-body text-gray-dark font-thin">
+        {title}
+      </p>
+    </div>
+    <div className="mt-4 md:mt-0 hidden lg:block">
+      <span className="inline-flex items-center text-gray-800 hover:text-primary transition-colors duration-200 font-medium">
+        <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
+      </span>
+    </div>
+  </div>
+);
+
 // Add new component for governance documents
 const GovernanceDocument = ({ title, pdfUrl }) => (
   <div className="text-gray-light border-gray-light border-b pb-4">
@@ -156,32 +172,14 @@ export default function Home() {
             href="/investor-relations" 
           >
             <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4">
-              <div>
-                <h3 className="text-heading-mobile md:text-heading font-haboro text-gray-dark mb-2 uppercase">
-                  Access Financial Information
-                </h3>
-                <p className="text-body-mobile md:text-body text-gray-dark font-thin">
-                  View SEC fillings for WILLOW LANE ACQUISITION CORPORATION
-                </p>
-              </div>
-              <div className="mt-4 md:mt-0 hidden lg:block">
-                <span className="inline-flex items-center text-gray-800 hover:text-primary transition-colors duration-200 font-medium">
-                  <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
-                </span>
-              </div>
+              <h3 className="text-heading-mobile md:text-heading font-haboro text-gray-dark mb-2 uppercase">
+                Access Financial Information
+              </h3>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
-              <div>
-                <p className="text-body-mobile md:text-body text-gray-dark font-thin">
-                  View 2024 PIFC ANNUAL STATEMENT
-                </p>
-              </div>
-              <div className="mt-4 md:mt-0 hidden lg:block">
-                <span className="inline-flex items-center text-gray-800 hover:text-primary transition-colors duration-200 font-medium">
-                  <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
-                </span>
-              </div>
-            </div>
+            <FinanceLink title="Investor Materials" />
+            <FinanceLink title="View SEC fillings for WILLOW LANE ACQUISITION CORPORATION" />
+            <FinanceLink title="Press Releases" />
+            <FinanceLink title="View 2024 PIFC ANNUAL STATEMENT" />
           </Link>
         </div>
       </section>
