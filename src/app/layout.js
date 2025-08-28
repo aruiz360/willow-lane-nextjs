@@ -5,6 +5,7 @@ import './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // Navigation Items Component
 const NavItems = ({ mobile }) => (
@@ -21,6 +22,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" >
+      <head>
+        <GoogleAnalytics trackPageViews gaMeasurementId="G-CPNPD7RYR3" />
+      </head>
       <body className="flex flex-col min-h-screen bg-white font-source-sans">
         <header className="w-full bg-white border-b border-primary">
           <nav className="container mx-auto">
@@ -28,12 +32,12 @@ export default function RootLayout({ children }) {
               {/* Logo */}
               <Link href="/" className="relative">
                 <div className="relative w-[160px] md:w-[220px] aspect-[16/9]">
-                  <Image 
-                    src="/logo_sin_margenes.png" 
-                    alt="Company Logo" 
+                  <Image
+                    src="/logo_sin_margenes.png"
+                    alt="Company Logo"
                     fill
                     className="object-contain"
-                    priority 
+                    priority
                   />
                 </div>
               </Link>
