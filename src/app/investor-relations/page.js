@@ -1,18 +1,35 @@
 import Link from 'next/link'
+import Image from "next/image"
+import DownloadWithForm from "../components/DownloadWithForm"
 
 export const metadata = {
   title: 'Investor Relations | Willow Lane Acquisition Corporation',
   description: 'Access important financial information and SEC filings for Willow Lane Acquisition Corporation.',
 }
 
-const LinkElement = ({ linkLabel, linkHref }) => (
-    <a 
-      href={linkHref}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source">
-      {linkLabel}
-    </a>
+const LinkElement = ({ linkLabel, linkHref, imageSrc }) => (
+    <div className="text-center items-center">
+      <a
+        href={linkHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
+      >
+        {linkLabel}
+
+        {imageSrc && (
+          <div className='text-center'>
+            <Image
+              src={imageSrc}
+              alt={linkLabel}
+              width={360}
+              height={170}
+              className="pt-5 mx-auto"
+            />
+          </div>
+        )}
+      </a>
+    </div>
 )
 
 export default function InvestorRelations() {
@@ -23,13 +40,15 @@ export default function InvestorRelations() {
           <h2 className="text-xl md:text-2xl font-bold text-primary font-haboro uppercase">
             Investor Materials
           </h2>
-          <LinkElement
-            linkLabel="Investor Presentation"
-            linkHref="/about"
+          <DownloadWithForm
+            title="Investor-Presentation"
+            imageSrc="/imgs/Investor-Presentation.png"
+            pdfUrl="/documents/Investor-Presentation.pdf"
           />
           <LinkElement
             linkLabel="Investor Deck"
-            linkHref="/about"
+            linkHref="/documents/Investor-Deck.pdf"
+            imageSrc="/imgs/Investor-Deck.png"
           />
         </div>
 
@@ -38,16 +57,12 @@ export default function InvestorRelations() {
             SEC Filings
           </h2>
           <LinkElement
-            linkLabel="Post-Merger Filings"
-            linkHref="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002032379&owner=include&count=40"
-          />
-          <LinkElement
             linkLabel="8-K Merger Announcement"
-            linkHref="/about"
+            linkHref="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002032379&count=10"
           />
           <LinkElement
             linkLabel="All SEC Filings for WLAC SPAC"
-            linkHref="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002032379&owner=include&count=40"
+            linkHref="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002032379&count=10"
           />
         </div>
 
@@ -55,16 +70,16 @@ export default function InvestorRelations() {
           <h2 className="text-heading-mobile md:text-heading font-bold text-primary font-haboro uppercase">
             PRESS RELEASES
           </h2>
-          <Link 
+          <LinkElement
+            linkLabel="Merger Announcement Press Release"
+            linkHref="https://google.com"
+          />
+          <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
           >
             All Press Releases
           </Link>
-          <LinkElement
-            linkLabel="Merger Announcement Press Release"
-            linkHref="/about"
-          />
         </div>
       </div>
     </div>

@@ -5,41 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
-const slides = [
-  {
-    id: 1,
-    image: '/company-logos/tecnoglass.png',
-    title: "First Slide",
-    description: "This is the description for the first slide.",
-    link: "#",
-  },
-  {
-    id: 2,
-    image: '/company-logos/inspired.png',
-    title: "Second Slide",
-    description: "This is the description for the second slide.",
-    link: "#",
-  },
-  {
-    id: 3,
-    image: '/company-logos/lazydays.png',
-    title: "Third Slide",
-    description: "This is the description for the third slide.",
-    link: "#",
-  },
-];
-
-export default function Carrousel() {
+export default function Carrousel({title, slides}) {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
   const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <span className="py-10">
-      <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4 text-center py-5">
-        PRESS RELEASES
-      </h2>
+    <span>
+      {title && (
+        <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4 text-center py-5 pt-10">
+          {title.toUpperCase()}
+        </h2>
+      )}
+
       <div className="relative w-full mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
@@ -65,6 +44,7 @@ export default function Carrousel() {
               <p className="text-gray-600 mt-2">{slides[current].description}</p>
               <a
                 href={slides[current].link}
+                target="_blank"
                 className="mt-4 text-primary font-semibold hover:underline"
               >
                 Learn More →
@@ -88,7 +68,7 @@ export default function Carrousel() {
         </button>
 
         {/* Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
           {slides.map((_, index) => (
             <button
               key={index}

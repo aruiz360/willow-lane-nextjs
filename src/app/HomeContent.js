@@ -7,18 +7,6 @@ import TeamAccordion from './components/TeamAccordion'
 import Carrousel from './components/Carrousel'
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
-const CompanyCard = ({ name, logo }) => (
-  <div className="aspect-[4/2] relative flex w-full md:w-auto md:flex-1 items-center justify-center">
-    <Image
-      src={logo}
-      alt={`${name} logo`}
-      fill
-      className="object-contain past-transaction"
-      priority
-    />
-  </div>
-);
-
 const companies = [
   {
     name: 'TECNOGLASS',
@@ -42,7 +30,44 @@ const companies = [
   }
 ];
 
-function PastPerformanceSection() {
+const slides = [
+  {
+    id: 1,
+    image: '/press/press-placeholder.jpg',
+    title: "First News Article (newest)",
+    description: "This is the description for the first News Article.",
+    link: "https://google.com",
+  },
+  {
+    id: 2,
+    image: '/press/press-placeholder.jpg',
+    title: "Second News Article",
+    description: "This is the description for the second News Article.",
+    link: "https://google.com",
+  },
+  {
+    id: 3,
+    image: '/press/press-placeholder.jpg',
+    title: "Third News Article (Oldest)",
+    description: "This is the description for the third News Article.",
+    link: "https://google.com",
+  },
+];
+
+const CompanyCard = ({ name, logo }) => (
+  <div className="aspect-[4/2] relative flex w-full md:w-auto md:flex-1 items-center justify-center">
+    <Image
+      src={logo}
+      alt={`${name} logo`}
+      width={800}
+      height={314}
+      className="object-contain past-transaction"
+      priority
+    />
+  </div>
+);
+
+function PastTransactions() {
   return (
     <section className="relative overflow-hidden">
       <div className='container mx-auto py-8 lg:py-16 px-4 lg:px-0'>
@@ -67,7 +92,6 @@ function PastPerformanceSection() {
   );
 }
 
-// Financial Elements
 const FinanceLink = ({title}) => (
   <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
     <div>
@@ -83,7 +107,6 @@ const FinanceLink = ({title}) => (
   </div>
 );
 
-// Add new component for governance documents
 const GovernanceDocument = ({ title, pdfUrl }) => (
   <div className="text-gray-light border-gray-light border-b pb-4">
     <a
@@ -117,19 +140,21 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="bg-primary px-4 lg:px-0">
-        {/* Background Icon */}
         <div className='container mx-auto py-8 lg:py-16 relative'>
             <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-              <Image
-                src="/logo_hero.png"
-                alt="Decorative background"
-                width={450}
-                height={550}
-                priority
-              />
+              <div className="relative w-[450px] h-[550px]">
+                <Image
+                  src="/logo_hero.png"
+                  alt="Decorative background"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
-            {/* Content */}
 
+            {/* Content */}
             <div className="w-full md:w-3/5 text-left md:text-left space-y-6 relative z-10">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
                 Willow Lane Acquisition Corporation
@@ -144,13 +169,10 @@ export default function Home() {
                 We have collectively identified and closed five SPAC business combinations, creating value for shareholders. We intend to focus on businesses with valuations of at least $500 million with positive EBITDA, sustainable cash flow, and experienced management teams.
               </p>
             </div>
-
-
         </div>
-
       </section>
 
-      <PastPerformanceSection />
+      <PastTransactions />
 
       {/* Team Accordion Section */}
       <section id="team" className="relative bg-primary">
@@ -163,7 +185,7 @@ export default function Home() {
       </section>
 
       {/* Press Releases */}
-      <Carrousel />
+      <Carrousel title="WLAC in the News" slides={slides} />
 
       {/* Investor Relations Section - Modernized */}
       <section className="bg-white">

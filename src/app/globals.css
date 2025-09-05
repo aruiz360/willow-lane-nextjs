@@ -14,6 +14,10 @@
   }
 }
 
+.logo-footer{
+  width: auto;
+}
+
 @font-face {
   font-family: 'Haboro Contrast';
   src: url('/fonts/HaboroContrast-ExtBk.woff2') format('woff2');
