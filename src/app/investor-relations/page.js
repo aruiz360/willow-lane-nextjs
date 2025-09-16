@@ -40,14 +40,19 @@ export default function InvestorRelations() {
           <h2 className="text-xl md:text-2xl font-bold text-primary font-haboro uppercase">
             Investor Materials
           </h2>
+          <Image
+            src="/imgs/Investor-Presentation.png"
+            alt="Investor-Presentation"
+            width={360}
+            height={170}
+            className="pt-5 mx-auto"
+          />
           <DownloadWithForm
-            title="Investor-Presentation"
-            imageSrc="/imgs/Investor-Presentation.png"
-            pdfUrl="/uploads/Riveron_Investor_2025.mp4"
+            title="View Webcast"
+            videoUrl="/uploads/Riveron_Investor_2025.mp4"
           />
           <LinkElement
-            linkLabel="Investor Deck"
-            imageSrc="/imgs/Investor-Deck.png"
+            linkLabel="View Investor Presentation"
             linkHref="/uploads/BoostRun_InvestorPresentation_Sep14-2025.pdf"
           />
         </div>

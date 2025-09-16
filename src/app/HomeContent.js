@@ -146,10 +146,10 @@ export default function Home() {
                 {"Boost Run to Go Public via Business Combination with Willow Lane Acquisition Corp (NASDAQ: $WLAC)"}
               </h1>
               <p className="text-body-mobile md:text-body font-light !mt-0 text-gray-light">
-                {"Boost Run, a rapidly growing provider of AI Cloud Infrastructure and high performance compute (HPC), and Willow Lane Acquisition Corp., a publicly traded special purpose acquisition company, announced on September 16, 2025, that they have entered into a definitive business combination agreement through which Boost Run will become a publicly-listed company."}
+                {"Boost Run, a rapidly growing provider of AI Cloud Infrastructure and high-performance compute (HPC), and Willow Lane Acquisition Corp., a publicly traded special purpose acquisition company, announced on September 16, 2025, a definitive business combination agreement through which Boost Run will become publicly-listed."}
               </p>
               <p className="text-body-mobile md:text-body font-light text-gray-light">
-                {"Boost Run's bare-metal platform is built for complex enterprise and regulated workloads, combining operator-level certifications and security, to support AI compute at scale. The merger offers investors a way to participate in the nascent multi-cloud industry, as companies seek to boost AI capabilities and access on-demand alternatives that comply with their increasing need for secure, application-specific outsourced computing needs."}
+                {"Boost Run's bare-metal platform supports complex enterprise and regulated workloads with operator-level certifications and security, to support AI compute at scale. The merger offers investors exposure to the nascent multi-cloud industry, as companies boost AI capabilities and seek secure, application-specific outsourced computing needs."}
               </p>
             </div>
         </div>
@@ -168,7 +168,11 @@ export default function Home() {
       </section>
 
       {/* Press Releases */}
-      <Carrousel title="WLAC in the News" slides={slides} />
+      <section id="pr" className="relative">
+        <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
+          <Carrousel title="WLAC in the News" slides={slides} />
+        </div>
+      </section>
 
       {/* Investor Relations Section - Modernized */}
       <section className="bg-white">

@@ -11,9 +11,10 @@ if (typeof window !== "undefined") {
 export default function DownloadWithForm({
   title = "PDF Report",
   imageSrc,
-  pdfUrl
+  videoUrl
 }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isFormOpen, setIsFormOpen] = useState(false)
+  const [isPlayerOpen, setIsPlayerOpen] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState("")
   const [form, setForm] = useState({
@@ -64,13 +65,8 @@ export default function DownloadWithForm({
       })
 
       if (res.ok) {
-        setIsOpen(false)
-
-        // Trigger PDF download
-        const link = document.createElement("a")
-        link.href = pdfUrl
-        link.download = pdfUrl
-        link.click()
+        setIsFormOpen(false)
+        setIsPlayerOpen(true)
       } else {
         setError("Something went wrong. Please try again.")
       }
@@ -85,7 +81,7 @@ export default function DownloadWithForm({
   return (
     <div className="text-center">
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => setIsFormOpen(true)}
         className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
       >
         {title}
@@ -101,8 +97,8 @@ export default function DownloadWithForm({
       </button>
 
       <Modal
-        isOpen={isOpen}
-        onRequestClose={() => setIsOpen(false)}
+        isOpen={isFormOpen}
+        onRequestClose={() => setIsFormOpen(false)}
         className="bg-white max-w-lg mx-auto p-6 rounded shadow-lg mt-20"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start"
       >
@@ -121,6 +117,20 @@ export default function DownloadWithForm({
             {isSubmitting ? "Saving..." : "Send & Download"}
           </button>
         </form>
+      </Modal>
+
+      <Modal
+        isOpen={isPlayerOpen}
+        onRequestClose={() => setIsPlayerOpen(false)}
+        className="bg-black max-w-3xl mx-auto p-6 rounded shadow-lg mt-20"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+      >
+        <video
+          src={videoUrl}
+          controls
+          autoPlay
+          className="w-full h-auto rounded-lg shadow-lg"
+        />
       </Modal>
     </div>
   )

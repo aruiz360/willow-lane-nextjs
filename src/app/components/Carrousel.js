@@ -14,7 +14,7 @@ export default function Carrousel({title, slides}) {
   return (
     <span>
       {title && (
-        <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4 text-center py-5 pt-10">
+        <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4 text-center pb-5">
           {title.toUpperCase()}
         </h2>
       )}
