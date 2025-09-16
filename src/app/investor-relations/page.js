@@ -49,11 +49,13 @@ export default function InvestorRelations() {
           />
           <DownloadWithForm
             title="View Webcast"
+            mode = "player"
             videoUrl="/uploads/Riveron_Investor_2025.mp4"
           />
-          <LinkElement
-            linkLabel="View Investor Presentation"
-            linkHref="/uploads/BoostRun_InvestorPresentation_Sep14-2025.pdf"
+          <DownloadWithForm
+            title="View Investor Presentation"
+            mode = "download"
+            fileUrl="/uploads/BoostRun_InvestorPresentation_Sep14-2025.pdf"
           />
         </div>
 

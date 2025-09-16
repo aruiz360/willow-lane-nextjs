@@ -9,9 +9,11 @@ if (typeof window !== "undefined") {
 }
 
 export default function DownloadWithForm({
-  title = "PDF Report",
+  title = "Get Resource",
   imageSrc,
-  videoUrl
+  fileUrl,
+  videoUrl,
+  mode = "player" // "download" | "player"
 }) {
   const [isFormOpen, setIsFormOpen] = useState(false)
   const [isPlayerOpen, setIsPlayerOpen] = useState(false)
@@ -66,7 +68,14 @@ export default function DownloadWithForm({
 
       if (res.ok) {
         setIsFormOpen(false)
-        setIsPlayerOpen(true)
+        if (mode === "player") {
+          setIsPlayerOpen(true)
+        } else if (mode === "download") {
+          const link = document.createElement("a")
+          link.href = fileUrl
+          link.download = fileUrl
+          link.click()
+        }
       } else {
         setError("Something went wrong. Please try again.")
       }
@@ -119,19 +128,21 @@ export default function DownloadWithForm({
         </form>
       </Modal>
 
-      <Modal
-        isOpen={isPlayerOpen}
-        onRequestClose={() => setIsPlayerOpen(false)}
-        className="bg-black max-w-3xl mx-auto p-6 rounded shadow-lg mt-20"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
-      >
-        <video
-          src={videoUrl}
-          controls
-          autoPlay
-          className="w-full h-auto rounded-lg shadow-lg"
-        />
-      </Modal>
+      {mode === "player" && (
+        <Modal
+          isOpen={isPlayerOpen}
+          onRequestClose={() => setIsPlayerOpen(false)}
+          className="bg-black max-w-3xl mx-auto p-6 rounded shadow-lg mt-20"
+          overlayClassName="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+        >
+          <video
+            src={videoUrl}
+            controls
+            autoPlay
+            className="w-full h-auto rounded-lg shadow-lg"
+          />
+        </Modal>
+      )}
     </div>
   )
 }
