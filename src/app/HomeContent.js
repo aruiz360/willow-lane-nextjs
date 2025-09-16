@@ -162,7 +162,12 @@ export default function Home() {
         </div>
       </section>
 
-      <PastTransactions />
+      {/* Press Releases */}
+      <section id="pr" className="relative">
+        <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
+          <Carrousel title="WLAC in the News" slides={slides} />
+        </div>
+      </section>
 
       {/* Team Accordion Section */}
       <section id="team" className="relative bg-primary">
@@ -174,12 +179,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Press Releases */}
-      <section id="pr" className="relative">
-        <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
-          <Carrousel title="WLAC in the News" slides={slides} />
-        </div>
-      </section>
+      <PastTransactions />
 
       {/* Investor Relations Section - Modernized */}
       <section className="bg-white">
