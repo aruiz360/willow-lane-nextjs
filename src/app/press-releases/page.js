@@ -10,8 +10,8 @@ const slides = [
     id: 1,
     image: '/press/bloomberg.jpg',
     title: "Bloomberg Article",
-    description: "This is the description for the first News Article.",
-    link: "https://google.com",
+    description: "Boost Run Set to Go Public in US Via $614 Million SPAC Merger.",
+    link: "https://www.bloomberg.com/news/articles/2025-09-16/boost-run-set-to-go-public-in-us-via-614-million-spac-merger?srnd=undefined&embedded-checkout=true",
   }
 ];
 

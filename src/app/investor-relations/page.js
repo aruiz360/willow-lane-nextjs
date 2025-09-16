@@ -41,7 +41,7 @@ export default function InvestorRelations() {
             Investor Materials
           </h2>
           <Image
-            src="/imgs/Investor-Presentation.png"
+            src="/imgs/Investor-Deck.png"
             alt="Investor-Presentation"
             width={360}
             height={170}
@@ -77,7 +77,7 @@ export default function InvestorRelations() {
           </h2>
           <LinkElement
             linkLabel="Merger Announcement Press Release"
-            linkHref="https://google.com"
+            linkHref="/uploads/BCAPressRelease.pdf"
           />
           <Link
             href={`/press-releases`}
