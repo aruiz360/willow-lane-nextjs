@@ -54,31 +54,36 @@ export default function Carrousel({title, slides}) {
         </AnimatePresence>
 
         {/* Navigation Buttons */}
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 -translate-y-1/2 left-4 bg-white/70 hover:bg-white p-2 rounded-full shadow"
-        >
-          <ChevronLeftIcon className="w-5 h-5 text-gray-800" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 -translate-y-1/2 right-4 bg-white/70 hover:bg-white p-2 rounded-full shadow"
-        >
-          <ChevronRightIcon className="w-5 h-5 text-gray-800" />
-        </button>
-
-        {/* Indicators */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, index) => (
+        {slides.length > 1 && (
+          <>
+            {/* Navigation Buttons */}
             <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full ${
-                current === index ? "bg-primary" : "bg-gray-300"
-              }`}
-            />
-          ))}
-        </div>
+              onClick={prevSlide}
+              className="absolute top-1/2 -translate-y-1/2 left-4 bg-white/70 hover:bg-white p-2 rounded-full shadow"
+            >
+              <ChevronLeftIcon className="w-5 h-5 text-gray-800" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="absolute top-1/2 -translate-y-1/2 right-4 bg-white/70 hover:bg-white p-2 rounded-full shadow"
+            >
+              <ChevronRightIcon className="w-5 h-5 text-gray-800" />
+            </button>
+
+            {/* Indicators */}
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrent(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    current === index ? "bg-primary" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </span>
   );

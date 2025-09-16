@@ -43,12 +43,12 @@ export default function InvestorRelations() {
           <DownloadWithForm
             title="Investor-Presentation"
             imageSrc="/imgs/Investor-Presentation.png"
-            pdfUrl="/documents/Investor-Presentation.pdf"
+            pdfUrl="/uploads/Riveron_Investor_2025.mp4"
           />
           <LinkElement
             linkLabel="Investor Deck"
-            linkHref="/documents/Investor-Deck.pdf"
             imageSrc="/imgs/Investor-Deck.png"
+            linkHref="/uploads/BoostRun_InvestorPresentation_Sep14-2025.pdf"
           />
         </div>
 
@@ -58,7 +58,7 @@ export default function InvestorRelations() {
           </h2>
           <LinkElement
             linkLabel="8-K Merger Announcement"
-            linkHref="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002032379&count=10"
+            linkHref="https://www.sec.gov/ix?doc=/Archives/edgar/data/2032379/000149315225013534/form8-k.htm"
           />
           <LinkElement
             linkLabel="All SEC Filings for WLAC SPAC"
@@ -78,7 +78,7 @@ export default function InvestorRelations() {
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
           >
-            All Press Releases
+            WLAC in the News
           </Link>
         </div>
       </div>

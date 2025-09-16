@@ -69,7 +69,7 @@ export default function DownloadWithForm({
         // Trigger PDF download
         const link = document.createElement("a")
         link.href = pdfUrl
-        link.download = title + ".pdf"
+        link.download = pdfUrl
         link.click()
       } else {
         setError("Something went wrong. Please try again.")

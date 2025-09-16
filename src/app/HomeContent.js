@@ -33,25 +33,11 @@ const companies = [
 const slides = [
   {
     id: 1,
-    image: '/press/press-placeholder.jpg',
-    title: "First News Article (newest)",
+    image: '/press/bloomberg.jpg',
+    title: "Bloomberg Article",
     description: "This is the description for the first News Article.",
     link: "https://google.com",
-  },
-  {
-    id: 2,
-    image: '/press/press-placeholder.jpg',
-    title: "Second News Article",
-    description: "This is the description for the second News Article.",
-    link: "https://google.com",
-  },
-  {
-    id: 3,
-    image: '/press/press-placeholder.jpg',
-    title: "Third News Article (Oldest)",
-    description: "This is the description for the third News Article.",
-    link: "https://google.com",
-  },
+  }
 ];
 
 const CompanyCard = ({ name, logo }) => (
