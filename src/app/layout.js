@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
 
-          <footer className="bg-white text-primary border-t border-primary">
+          <footer className="bg-white text-primary border-t border-primary border-t-2">
             <div className="container mx-auto py-8 flex items-center justify-between flex-col md:flex-row md:justify-between">
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="text-center md:text-right">

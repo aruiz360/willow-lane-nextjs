@@ -7,45 +7,9 @@ import TeamAccordion from './components/TeamAccordion'
 import Carrousel from './components/Carrousel'
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
-const companies = [
-  {
-    name: 'TECNOGLASS',
-    logo: '/company-logos/tecnoglass.png'
-  },
-  {
-    name: 'INSPIRED',
-    logo: '/company-logos/inspired.png'
-  },
-  {
-    name: 'LAZYDAYS RV',
-    logo: '/company-logos/lazydays.png'
-  },
-  {
-    name: 'STRYVE',
-    logo: '/company-logos/stryve.png'
-  },
-  {
-    name: 'ENSYSCE',
-    logo: '/company-logos/ensysce.png'
-  }
-];
-
-const slides = [
-  {
-    id: 1,
-    image: '/press/bloomberg.jpg',
-    title: "Boost Run Set to Go Public in US Via $614 Million SPAC Merger",
-    description: "AI cloud infrastructure company Boost Run LLC has reached an agreement to go public on the Nasdaq through a merger with Willow Lane Acquisition Corp.",
-    link: "https://www.bloomberg.com/news/articles/2025-09-16/boost-run-set-to-go-public-in-us-via-614-million-spac-merger?srnd=undefined&embedded-checkout=true",
-  },
-  {
-    id: 2,
-    image: '/press/pr2.jpg',
-    title: "GPU cloud startup Boost Run to go public via de-SPAC merger",
-    description: "The merger is likely to entice retail investors who are keen to get in on the AI boom. Boost Run is one of a growing number of cloud infrastructure providers that’s dedicated to AI workloads, offering access to competitively-priced servers powered by Nvidia Corp.’s graphics processing units, which support high-performance training and inference. The merger is likely to entice retail investors who are keen to get in on the AI boom. Boost Run is one of a growing number of cloud infrastructure providers that’s dedicated to AI workloads, offering access to competitively-priced servers powered by Nvidia Corp.’s graphics processing units, which support high-performance training and inference. Turn on screen reader support To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slashMaya Hernandez has joined the document.",
-    link: "https://siliconangle.com/2025/09/16/gpu-cloud-startup-boost-run-go-public-via-de-spac-merger/",
-  }
-];
+// Data
+import companies from './data/companies'
+import slides from './data/slides'
 
 const CompanyCard = ({ name, logo }) => (
   <div className="aspect-[4/2] relative flex w-full md:w-auto md:flex-1 items-center justify-center">
@@ -86,14 +50,14 @@ function PastTransactions() {
 }
 
 const FinanceLink = ({title}) => (
-  <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
+  <div className="flex flex-col md:flex-row justify-between items-center border-gray-light border-b pb-4 pt-4">
     <div>
-      <p className="text-body-mobile md:text-body text-gray-dark font-thin">
+      <p className="text-body-mobile md:text-body text-gray-light font-thin">
         {title}
       </p>
     </div>
     <div className="mt-4 md:mt-0 hidden lg:block">
-      <span className="inline-flex items-center text-gray-800 hover:text-primary transition-colors duration-200 font-medium">
+      <span className="inline-flex items-center text-gray-light hover:text-gray-400 transition-colors duration-200 font-medium">
         <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
       </span>
     </div>
@@ -101,15 +65,15 @@ const FinanceLink = ({title}) => (
 );
 
 const GovernanceDocument = ({ title, pdfUrl }) => (
-  <div className="text-gray-light border-gray-light border-b pb-4">
+  <div className="text-primary border-primary border-b pb-4">
     <a
       href={pdfUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="flex justify-between items-center"
     >
-      <span className="text-body-mobile md:text-body text-gray-light font-thin">{title}</span>
-      <ChevronDownIcon className="w-4 h-4 lg:w-14 lg:h-14 text-gray-light [stroke-width:1]" />
+      <span className="text-body-mobile md:text-body text-primary font-thin">{title}</span>
+      <ChevronDownIcon className="w-4 h-4 lg:w-14 lg:h-14 text-primary [stroke-width:1]" />
     </a>
   </div>
 );
@@ -182,17 +146,17 @@ export default function Home() {
       <PastTransactions />
 
       {/* Investor Relations Section - Modernized */}
-      <section className="bg-white">
+      <section className="bg-primary text-gray-light">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4">INVESTOR RELATIONS</h2>
+            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-gray-light mb-4">INVESTOR RELATIONS</h2>
           </div>
 
           <Link
             href="/investor-relations"
           >
-            <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4">
-              <h3 className="text-heading-mobile md:text-heading font-haboro text-gray-dark mb-2 uppercase">
+            <div className="flex flex-col md:flex-row justify-between items-center border-gray-light border-b pb-4">
+              <h3 className="text-heading-mobile md:text-heading font-haboro mb-2 uppercase">
                 Access Financial Information
               </h3>
             </div>
@@ -200,10 +164,10 @@ export default function Home() {
             <FinanceLink title="View SEC fillings for WILLOW LANE ACQUISITION CORPORATION" />
             <FinanceLink title="Press Releases" />
           </Link>
-          <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
+          <div className="flex flex-col md:flex-row justify-between items-center border-gray-light border-b pb-4 pt-4">
             <div>
               <a
-              className="text-body-mobile md:text-body text-gray-dark font-thin"
+              className="text-body-mobile md:text-body font-thin"
               href="/documents/Willow Lane Acquisition Corp 2024 Class A PFIC Annual Information Statement.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -212,7 +176,7 @@ export default function Home() {
               </a>
             </div>
             <div className="mt-4 md:mt-0 hidden lg:block">
-              <span className="inline-flex items-center text-gray-800 hover:text-primary transition-colors duration-200 font-medium">
+              <span className="inline-flex items-center gray-light hover:text-light transition-colors duration-200 font-medium">
                 <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
               </span>
             </div>
@@ -221,10 +185,10 @@ export default function Home() {
       </section>
 
       {/* Governance Documents Section */}
-      <section id="governance" className=" bg-primary text-gray-light pb-5">
+      <section id="governance" className="bg-white pb-5">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-gray-light mb-4">GOVERNANCE DOCUMENTS</h2>
+            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4">GOVERNANCE DOCUMENTS</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-4">
