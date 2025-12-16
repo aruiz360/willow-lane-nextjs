@@ -13,7 +13,6 @@ const NavItems = ({ mobile }) => (
     <li><Link href="/" className="whitespace-nowrap">HOME</Link></li>
     <li><Link href="/investor-relations" className="whitespace-nowrap">INVESTOR RELATIONS</Link></li>
     <li><Link href="/#governance" className="whitespace-nowrap">GOVERNANCE DOCUMENTS</Link></li>
-    <li><Link href="/#team" className="whitespace-nowrap">OUR TEAM</Link></li>
   </>
 )
 
