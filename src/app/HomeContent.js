@@ -97,9 +97,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="bg-primary px-4 lg:px-0">
-        <div className='container mx-auto py-8 lg:py-16 relative'>
-            <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-              <div className="relative w-[450px] h-[550px]">
+        <div className="container mx-auto py-8 lg:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+            {/* Right Column (Image / Visual) */}
+            <div className="order-1 md:order-2 flex justify-center md:justify-end">
+              <div className="relative w-[180px] h-[240px] sm:w-[220px] sm:h-[300px] md:w-[450px] md:h-[550px]">
                 <Image
                   src="/logo_hero.png"
                   alt="Decorative background"
@@ -111,8 +114,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Content */}
-            <div className="w-full md:w-3/5 text-left md:text-left space-y-6 relative z-10">
+            {/* Left Column (Content) */}
+            <div className="order-2 md:order-1 space-y-6 text-left">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
                 {"Boost Run to Go Public via Business Combination with Willow Lane Acquisition Corp (NASDAQ: $WLAC)"}
               </h1>
@@ -123,6 +126,7 @@ export default function Home() {
                 {"Boost Run's bare-metal platform supports complex enterprise and regulated workloads with operator-level certifications and security, to support AI compute at scale. The merger offers investors exposure to the nascent multi-cloud industry, as companies boost AI capabilities and seek secure, application-specific outsourced computing needs."}
               </p>
             </div>
+          </div>
         </div>
       </section>
 
