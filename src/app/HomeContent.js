@@ -98,24 +98,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-primary px-4 lg:px-0">
         <div className="container mx-auto py-8 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
-            {/* Right Column (Image / Visual) */}
-            <div className="order-1 md:order-2 flex justify-center md:justify-end">
-              <div className="relative w-[180px] h-[240px] sm:w-[220px] sm:h-[300px] md:w-[450px] md:h-[550px]">
-                <Image
-                  src="/logo_hero.png"
-                  alt="Decorative background"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 450px"
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             {/* Left Column (Content) */}
-            <div className="order-2 md:order-1 space-y-6 text-left">
+            <div className="order-1 space-y-6 text-left">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
                 {"Boost Run to Go Public via Business Combination with Willow Lane Acquisition Corp (NASDAQ: $WLAC)"}
               </h1>
