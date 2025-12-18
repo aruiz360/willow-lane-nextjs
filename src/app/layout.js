@@ -10,10 +10,21 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 // Navigation Items Component
 const NavItems = ({ mobile }) => (
   <>
-    <li><Link href="/" className="whitespace-nowrap">HOME</Link></li>
-    <li><Link href="/investor-relations" className="whitespace-nowrap">INVESTOR RELATIONS</Link></li>
-    <li><Link href="/#governance" className="whitespace-nowrap">GOVERNANCE DOCUMENTS</Link></li>
-    <li><Link href="/#team" className="whitespace-nowrap">OUR TEAM</Link></li>
+    <li className="mb-5 xl:mb-0">
+      <Link href="/" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">HOME</Link>
+    </li>
+    <li className="mb-5 xl:mb-0">
+      <Link href="/investor-relations" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">INVESTOR RELATIONS</Link>
+    </li>
+    <li className="mb-5 xl:mb-0">
+      <Link href="/#governance" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">GOVERNANCE DOCUMENTS</Link>
+    </li>
+    <li className="mb-5 xl:mb-0">
+      <Link href="/#team" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">OUR TEAM</Link>
+    </li>
+    <li className="mb-5 xl:mb-0">
+      <Link href="/#disclaimer" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">DISCLAIMER</Link>
+    </li>
   </>
 )
 
@@ -32,12 +43,12 @@ export default function RootLayout({ children }) {
               <div className="flex justify-between lg:justify-start px-4 lg:px-2 gap-24 items-center h-[120px] lg:h-[160px]">
                 {/* Logo */}
                 <Link href="/" className="relative">
-                  <div className="relative w-[160px] md:w-[220px] aspect-[16/9]">
+                  <div className="relative w-[200px] md:w-[280px] aspect-[16/9]">
                     <Image
                       src="/logo_sin_margenes.png"
                       alt="Company Logo"
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 160px, 220px"
                       className="object-contain"
                       priority
                     />
