@@ -23,7 +23,7 @@ const NavItems = ({ mobile }) => (
       <Link href="/#team" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">OUR TEAM</Link>
     </li>
     <li className="mb-5 xl:mb-0">
-      <Link href="/#disclaimer" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">DISCLAIMER</Link>
+      <Link href="/disclaimer" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">DISCLAIMER</Link>
     </li>
   </>
 )
