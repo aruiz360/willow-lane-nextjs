@@ -9,7 +9,7 @@ import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
 // Data
 import companies from './data/companies'
-import slides from './data/slides'
+import news_articles from './data/slides'
 
 const CompanyCard = ({ name, logo }) => (
   <div className="aspect-[4/2] relative flex w-full md:w-auto md:flex-1 items-center justify-center">
@@ -98,7 +98,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-primary px-4 lg:px-0">
         <div className="container mx-auto py-8 lg:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 items-center">
             {/* Left Column (Content) */}
             <div className="order-1 space-y-6 text-left">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
@@ -118,7 +118,7 @@ export default function Home() {
       {/* Press Releases */}
       <section id="pr" className="relative">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
-          <Carrousel title="WLAC in the News" slides={slides} />
+          <Carrousel title="WLAC in the News" slides={news_articles} />
         </div>
       </section>
 

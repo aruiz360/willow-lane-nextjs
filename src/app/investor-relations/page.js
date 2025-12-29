@@ -81,6 +81,10 @@ export default function InvestorRelations() {
             linkLabel="Merger Announcement Press Release"
             linkHref="/uploads/BCAPressRelease.pdf"
           />
+          <LinkElement
+            linkLabel="Boost Run Expands AI Infrastructure Ecosystem as it Prepares to Merge with Willow Lane Acquisition Corp"
+            linkHref="https://www.prnewswire.com/news-releases/boost-run-expands-ai-infrastructure-ecosystem-with-additional-gpu-data-center-financing-and-customer-partnerships-as-it-prepares-to-merge-with-willow-lane-acquisition-corp-302642687.html"
+          />
           <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
