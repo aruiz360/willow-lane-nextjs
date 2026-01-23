@@ -97,22 +97,10 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="bg-primary px-4 lg:px-0">
-        <div className='container mx-auto py-8 lg:py-16 relative'>
-            <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
-              <div className="relative w-[450px] h-[550px]">
-                <Image
-                  src="/logo_hero.png"
-                  alt="Decorative background"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 450px"
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="w-full md:w-3/5 text-left md:text-left space-y-6 relative z-10">
+        <div className="container mx-auto py-8 lg:py-16">
+          <div className="grid grid-cols-1 items-center">
+            {/* Left Column (Content) */}
+            <div className="order-1 space-y-6 text-left">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
                 {"WILLOW LANE ACQUISITION CORPORATION"}
               </h1>
@@ -126,6 +114,7 @@ export default function Home() {
                 {"We have collectively identified and closed five SPAC business combinations, creating value for shareholders. We intend to focus on businesses with valuations above $400 with positive EBITDA, sustainable cash flow, and experienced management teams."}
               </p>
             </div>
+          </div>
         </div>
       </section>
 
