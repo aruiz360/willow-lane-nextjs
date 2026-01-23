@@ -57,10 +57,9 @@ export default function InvestorRelations() {
             mode = "download"
             fileUrl="/uploads/BoostRun_InvestorPresentation_Sep14-2025.pdf"
           />
-          <DownloadWithForm
-            title="PFIC Annual Statement 2025"
-            mode = "download"
-            fileUrl="/uploads/Willow_Lane_Acquisition_Corp_2024_Class_A_PFIC_Annual_Information_Statement.pdf"
+          <LinkElement
+            linkLabel="PFIC Annual Statement 2024"
+            linkHref="uploads/Willow_Lane_Acquisition_Corp_2024_Class_A_PFIC_Annual_Information_Statement.pdf"
           />
         </div>
 
