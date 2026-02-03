@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
                 <Link href="/" className="relative">
                   <div className="relative w-[200px] md:w-[280px] aspect-[16/9]">
                     <Image
-                      src="/logo_sin_margenes.png"
+                      src="/logo_sin_margenes2.png"
                       alt="Company Logo"
                       fill
                       sizes="(max-width: 768px) 160px, 220px"
@@ -96,8 +96,8 @@ export default function RootLayout({ children }) {
                   </p>
                 </div>
               </div>
-              <Image src="/logo_nav.png" alt="Company Logo" width={250} height={200} className="logo-footer hidden md:block" />
-              <Image src="/logo_nav.png" alt="Company Logo" width={180} height={100} className="logo-footer block md:hidden mt-6" />
+              <Image src="/logo_nav2.png" alt="Company Logo" width={250} height={200} className="logo-footer hidden md:block" />
+              <Image src="/logo_nav2.png" alt="Company Logo" width={180} height={100} className="logo-footer block md:hidden mt-6" />
             </div>
           </footer>
         </div>
