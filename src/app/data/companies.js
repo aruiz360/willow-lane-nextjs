@@ -1,5 +1,9 @@
 const companies = [
   {
+    name: 'BOOSTRUN',
+    logo: '/company-logos/boostrun.png'
+  },
+  {
     name: 'TECNOGLASS',
     logo: '/company-logos/tecnoglass.png'
   },

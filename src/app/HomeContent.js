@@ -4,12 +4,10 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import TeamAccordion from './components/TeamAccordion'
-import Carrousel from './components/Carrousel'
 import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
 // Data
 import companies from './data/companies'
-import slides from './data/slides'
 
 const CompanyCard = ({ name, logo }) => (
   <div className="aspect-[4/2] relative flex w-full md:w-auto md:flex-1 items-center justify-center">
@@ -102,16 +100,14 @@ export default function Home() {
             {/* Left Column (Content) */}
             <div className="order-1 space-y-6 text-left">
               <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
-                {"WILLOW LANE ACQUISITION CORPORATION"}
+                {"WILLOW LANE ACQUISITION CORPORATION II"}
               </h1>
               <p className="text-body-mobile md:text-body font-light !mt-0 text-gray-light">
-                {"is a blank check company formed for the purpose of effecting a merger, amalgamation, share exchange, asset acquisition, share purchase, reorganizationor similar business combination with one or more businesses."}
+                {"is a blank check company formed for the purpose of effecting a merger, amalgamation, share exchange, asset acquisition, share purchase, reorganization or similar business combination with one or more businesses."}
               </p>
-              <p className="text-body-mobile md:text-body font-light text-gray-light">
-                {"Our team has broad sector knowledge and brings a combination of operating, investing, financial and transactional experience."}
-              </p>
-              <p className="text-body-mobile md:text-body font-light text-gray-light">
-                {"We have collectively identified and closed five SPAC business combinations, creating value for shareholders. We intend to focus on businesses with valuations above $400 with positive EBITDA, sustainable cash flow, and experienced management teams."}
+              <br />
+              <p className="text-body-mobile md:text-body font-light !mt-0 text-gray-light">
+                {"We have collectively identified and closed six SPAC business combinations, creating value for shareholders. We intend to focus on businesses with valuations above $400 million with positive EBITDA, sustainable cash flow, and experienced management teams."}
               </p>
             </div>
           </div>
@@ -138,14 +134,14 @@ export default function Home() {
           </div>
 
           <Link
-            href="https://axiomaestudio.com" target='_blank'
+            href="https://www.sec.gov/edgar/browse/?CIK=2083946&owner=exclude" target='_blank'
           >
             <div className="flex flex-col md:flex-row justify-between items-center text-primary pb-4">
               <h3 className="text-heading-mobile md:text-heading font-haboro mb-2 uppercase">
                 Access Financial Information
               </h3>
             </div>
-            <FinanceLink title="View SEC fillings for WILLOW LANE ACQUISITION CORPORATION" />
+            <FinanceLink title="View SEC fillings for Willow Lane Acquisition Corp II" />
           </Link>
         </div>
       </section>

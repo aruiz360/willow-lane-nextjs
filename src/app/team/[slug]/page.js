@@ -6,13 +6,7 @@ const teamMembers = {
       name: 'Luke Weil',
       title: 'Chief Executive Officer and Chairman of the Board',
       bio: [
-        "Luke serves as our Chief Executive Officer and Chairman of the Board since our formation in July 2024, and is the sole managing member of our sponsor, Willow Lane Sponsor LLC.",
-        "Previously, he served as the Non-Executive Chairman and a managing member of the sponsor of Andina Acquisition Corporation III ('Andina III') from its inception in January 2019 through its business combination with Stryve Foods, Inc. (Nasdaq: SNAX) in July 2021.",
-        "From November 2015 to March 2018, Mr. Weil was the non-Executive Chairman and a managing member of the sponsor of Andina Acquisition Corporation II ('Andina II'), which completed a business combination with Lazyday's R.V. Center, Inc (Nasdaq: GORV).",
-        "He served as Chief Executive Officer of Andina Acquisition Corporation ('Andina I') from January 2013 until its merger with Tecnoglass Inc. (NYSE: TGLS) in December 2013.",
-        "Since July 2021, Mr. Weil has served as a member of the Board of Directors of Stryve Foods. He has previously served on the boards of Lazydays Holdings, Inc., Tecnoglass, and All Market, Inc. (d/b/a Runa).",
-        "Earlier in his career, from 2008 to 2013, Mr. Weil headed International Business Development for Scientific Games Corporation in Latin America. From 2004 to 2006, he was an associate and then Junior Partner at Business, Strategies, & Insight.",
-        "Luke started his career as an investment banker at Bear Stearns. He holds a B.A. from Brown University and an M.B.A. from Columbia Business School."
+        "Luke serves as our Chief Executive Officer since August 2025 and Chairman of the Board since December 2025, and is the sole managing member of our sponsor, Willow Lane Sponsor II, LLC. He also serves as the Chief Executive Officer and Chairman of Willow Lane I. Previously, he served as the Non-Executive Chairman and a managing member of the sponsor of Andina Acquisition Corporation III ('Andina III') from its inception in January 2019 through its business combination with Stryve Foods, Inc. (Nasdaq: SNAX) in July 2021. From November 2015 to March 2018, Mr. Weil was the non-Executive Chairman and a managing member of the sponsor of Andina Acquisition Corporation II ('Andina II'), which completed a business combination with Lazyday's R.V. Center, Inc (Nasdaq: GORV). He served as Chief Executive Officer of Andina Acquisition Corporation ('Andina I') from January 2013 until its merger with Tecnoglass Inc. (NYSE: TGLS) in December 2013. Since July 2021, Mr. Weil has served as a member of the Board of Directors of Stryve Foods. He has previously served on the boards of Lazydays Holdings, Inc., Tecnoglass, and All Market, Inc. (d/b/a Runa). Earlier in his career, from 2008 to 2013, Mr. Weil headed International Business Development for Scientific Games Corporation in Latin America. From 2004 to 2006, he was an associate and then Junior Partner at Business, Strategies, & Insight. Luke started his career as an investment banker at Bear Stearns. He holds a B.A. from Brown University and an M.B.A. from Columbia Business School."
       ],
       photo: '/team/Luke Weil Photo.jpg'
     },
@@ -20,15 +14,7 @@ const teamMembers = {
       name: 'George Peng',
       title: 'Chief Financial Officer',
       bio: [
-        "George has served as our Chief Financial Officer since our formation in July 2024.",
-        "Previously, Mr. Peng served as Chief Financial Officer of Leisure Acquisition Corp., a SPAC that acquired Ensysce Biosciences, Inc., from December 2017 until June 2021.",
-        "He served as Vice President of Finance at Inspired Entertainment, Inc., from December 2016 to February 2022.",
-        "From February 2022 until July 2024, Mr. Peng pursued various consulting activities.",
-        "Prior to this, he was Chief Financial Officer of Hydra Industries Acquisition Corp., a SPAC that acquired Inspired Entertainment, Inc., from August 2015 until December 2016.",
-        "Mr. Peng was a consultant to Scientific Games Corporation from May 2013 to April 2014, where he assisted in its integration of the acquisition of WMS Industries.",
-        "He has also worked as a consultant focused on financial planning and analysis for various industries, including retail and financial services.",
-        "Earlier in his career, he was an Associate in the Investment Banking division of Credit Suisse, focusing on private equity, high yield, and leveraged lending products.",
-        "Mr. Peng holds an A.B. in Economics from the University of Michigan, Ann Arbor, as well as an M.B.A. with a concentration in Finance from the Anderson School at UCLA. He is also a CFA Charterholder."
+        "George serves as our Chief Financial Officer since December 2025. He also serves as the Chief Financial Officer of Willow Lane I. Previously, Mr. Peng served as Chief Financial Officer of Leisure Acquisition Corp., a SPAC that acquired Ensysce Biosciences, Inc., from December 2017 until June 2021. He served as Vice President of Finance at Inspired Entertainment, Inc., from December 2016 to February 2022. From February 2022 until July 2024, Mr. Peng pursued various consulting activities. Prior to this, he was Chief Financial Officer of Hydra Industries Acquisition Corp., a SPAC that acquired Inspired Entertainment, Inc., from August 2015 until December 2016. Mr. Peng was a consultant to Scientific Games Corporation from May 2013 to April 2014, where he assisted in its integration of the acquisition of WMS Industries. He has also worked as a consultant focused on financial planning and analysis for various industries, including retail and financial services. Earlier in his career, he was an Associate in the Investment Banking division of Credit Suisse, focusing on private equity, high yield, and leveraged lending products. Mr. Peng holds an A.B. in Economics from the University of Michigan, Ann Arbor, as well as an M.B.A. with a concentration in Finance from the Anderson School at UCLA. He is also a CFA Charterholder."
       ],
       photo: '/team/George Peng Photo.jpg'
     },
@@ -36,14 +22,7 @@ const teamMembers = {
       name: 'Maya Hernandez',
       title: 'Treasurer and Director of Business Development',
       bio: [
-        "Marjorie (Maya) has served as our Treasurer and Director of Business Development since our formation in July 2024.",
-        "From 2021 to 2024, Ms. Hernandez built a personal portfolio of early-stage company private investments.",
-        "She also served as Board Member and Treasurer of Caring for Colombia Foundation and founded Doulas en Español, a community organization in New York City.",
-        "From January 2019 to January 2021, she served as Treasurer of Andina III. Ms. Hernandez was Secretary and Treasurer of Andina II from November 2015 to October 2017.",
-        "She was an initial investor and advisor to Andina I.",
-        "Prior to this, Ms. Hernandez served as senior currency strategist for Latin America at HSBC Securities (USA) from 2008 to 2015.",
-        "From 2005 to 2008, she was the lead macro-economic and political analyst for HSBC, covering the Andean region.",
-        "Previously, Ms. Hernandez was a public policy associate at the Council of the Americas, a forum dedicated to contemporary political, social and economic issues in Latin America."
+        "Maya served as our Chief Operating Officer since December 2025. She also serves as the Treasurer and Director of Business Development for Willow Lane I. From 2021 to 2024, Ms. Hernandez built a personal portfolio of early-stage company private investments. She also served as Board Member and Treasurer of Caring for Colombia Foundation and founded Doulas en Español, a community organization in New York City. From September 2016 to January 2021, she served as Treasurer of Andina III. Ms. Hernandez was Secretary and then Secretary and Treasurer of Andina II from August 2015 to October 2017. She was an initial investor and advisor to Andina I. Prior to this, Ms. Hernandez served as senior currency strategist for Latin America at HSBC Securities (USA) from 2008 to 2015. From 2005 to 2008, she was the lead macro-economic and political analyst for HSBC, covering the Andean region. Previously, Ms. Hernandez was a public policy associate at the Council of the Americas, a forum dedicated to contemporary political, social and economic issues in Latin America."
       ],
       photo: '/team/Maya Hernandez Photo.jpg'
     },
