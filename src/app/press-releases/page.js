@@ -2,8 +2,8 @@ import Carrousel from '../components/Carrousel'
 import slides from '../data/slides'
 
 export const metadata = {
-    title: 'Investor Relations | Willow Lane Acquisition Corporation',
-    description: 'Access important financial information and SEC filings for Willow Lane Acquisition Corporation.',
+    title: 'News | Willow Lane Acquisition Corp II',
+    description: 'Access important financial information and SEC filings for Willow Lane Acquisition Corp II.',
 }
 
 export default function InvestorRelations() {

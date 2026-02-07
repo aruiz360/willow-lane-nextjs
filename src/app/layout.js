@@ -14,7 +14,7 @@ const NavItems = ({ mobile }) => (
       <Link href="/" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">HOME</Link>
     </li>
     <li className="mb-5 xl:mb-0">
-      <Link href="/investor-relations" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">INVESTOR RELATIONS</Link>
+      <Link href="/#ir-home" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">INVESTOR RELATIONS</Link>
     </li>
     <li className="mb-5 xl:mb-0">
       <Link href="/#governance" className="whitespace-nowrap xl:text-[1.4rem] text-[1.3rem]">GOVERNANCE DOCUMENTS</Link>
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <ul className="hidden xl:flex xl:flex-wrap items-center gap-4 text-heading w-full justify-between font-haboro text-primary">
+                <ul className="hidden xl:flex xl:flex-wrap items-center gap-4 text-heading w-full justify-between font-arsenal text-primary">
                   <NavItems />
                 </ul>
 
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
               {/* Mobile Menu */}
               {isMobileMenuOpen && (
                 <div className="xl:hidden bg-white border-t">
-                  <ul className="flex flex-col py-5 px-4 font-haboro text-heading-mobile text-primary">
+                  <ul className="flex flex-col py-5 px-4 font-arsenal text-heading-mobile text-primary">
                     <NavItems mobile={true} />
                   </ul>
                 </div>
@@ -83,11 +83,11 @@ export default function RootLayout({ children }) {
             {children}
           </main>
 
-          <footer className="bg-white text-primary border-t border-primary border-t-2">
+          <footer className="bg-white text-primary border-primary border-t-2">
             <div className="container mx-auto py-8 flex items-center justify-between flex-col md:flex-row md:justify-between">
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <div className="text-center md:text-right">
-                  <p className="font-haboro uppercase text-heading-mobile md:text-heading mb-2">Contact Information:</p>
+                  <p className="font-arsenal uppercase text-heading-mobile md:text-heading mb-2">Contact Information:</p>
                   <p className="flex flex-colitems-center justify-center md:justify-start mb-1 font-source-sans">
                     <span className="text-contact-mobile md:text-contact">(646) 565-3861</span>
                   </p>

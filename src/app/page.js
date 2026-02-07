@@ -2,8 +2,8 @@
 import HomeContent from './HomeContent'
 
 export const metadata = {
-  title: 'Willow Lane Acquisition Corporation | Home',
-  description: 'Willow Lane Acquisition Corporation is a blank check company formed for the purpose of effecting a merger, amalgamation, share exchange, asset acquisition, share purchase, reorganization or similar business combination.',
+  title: 'Willow Lane Acquisition Corp II | Home',
+  description: 'Willow Lane Acquisition Corp II is a blank check company formed for the purpose of effecting a merger, amalgamation, share exchange, asset acquisition, share purchase, reorganization or similar business combination.',
   icons: {
     icon: [
       { url: '/favicon/favicon.ico' },

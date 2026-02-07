@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         haboro: ['Haboro Contrast', 'sans-serif'],
+        arsenal: ['arsenal', 'sans-serif'],
         'source-sans': ['"Source Sans 3"', 'sans-serif'],
       },
       fontSize: {

@@ -27,7 +27,7 @@ function PastTransactions() {
     <section className="relative overflow-hidden">
       <div className='container mx-auto py-8 lg:py-16 px-4 lg:px-0'>
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-heading-mobile md:text-heading-lg font-haboro font-thin text-primary mb-4">PAST TRANSACTIONS</h2>
+          <h2 className="text-heading-mobile md:text-heading-lg font-arsenal font-thin text-primary mb-4">PAST TRANSACTIONS</h2>
         </div>
 
         <div className="relative mx-auto">
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center">
             {/* Left Column (Content) */}
             <div className="order-1 space-y-6 text-left">
-              <h1 className="text-heading-mobile md:text-heading uppercase font-haboro pb-3 text-gray-light">
+              <h1 className="text-heading-mobile md:text-heading uppercase font-arsenal pb-3 text-gray-light">
                 {"WILLOW LANE ACQUISITION CORPORATION II"}
               </h1>
               <p className="text-body-mobile md:text-body font-light !mt-0 text-gray-light">
@@ -120,24 +120,24 @@ export default function Home() {
       <section id="team" className="relative bg-primary">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-heading-mobile md:text-heading-lg text-gray-light font-haboro mb-4">OUR TEAM</h2>
+            <h2 className="text-heading-mobile md:text-heading-lg text-gray-light font-arsenal mb-4">OUR TEAM</h2>
           </div>
           <TeamAccordion />
         </div>
       </section>
 
       {/* Investor Relations Section - Modernized */}
-      <section className="bg-white">
+      <section id="ir-home" className="bg-white">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-primary mb-4">INVESTOR RELATIONS</h2>
+            <h2 className="text-heading-mobile md:text-heading-lg font-arsenal text-primary mb-4">INVESTOR RELATIONS</h2>
           </div>
 
           <Link
             href="https://www.sec.gov/edgar/browse/?CIK=2083946&owner=exclude" target='_blank'
           >
             <div className="flex flex-col md:flex-row justify-between items-center text-primary pb-4">
-              <h3 className="text-heading-mobile md:text-heading font-haboro mb-2 uppercase">
+              <h3 className="text-heading-mobile md:text-heading font-arsenal mb-2 uppercase">
                 Access Financial Information
               </h3>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
       <section id="governance" className="bg-primary text-gray-light pb-5">
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
           <div className="text-center mb-12">
-            <h2 className="text-heading-mobile md:text-heading-lg font-haboro text-gray-light mb-4">GOVERNANCE DOCUMENTS</h2>
+            <h2 className="text-heading-mobile md:text-heading-lg font-arsenal text-gray-light mb-4">GOVERNANCE DOCUMENTS</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-4">
