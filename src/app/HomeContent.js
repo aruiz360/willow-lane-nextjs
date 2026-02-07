@@ -48,7 +48,7 @@ function PastTransactions() {
 }
 
 const FinanceLink = ({title}) => (
-  <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b pb-4 pt-4">
+  <div className="flex flex-col md:flex-row justify-between items-center border-primary border-b mb-12">
     <div>
       <p className="text-body-mobile md:text-body text-primary font-thin">
         {title}
@@ -137,11 +137,22 @@ export default function Home() {
             href="https://www.sec.gov/edgar/browse/?CIK=2083946&owner=exclude" target='_blank'
           >
             <div className="flex flex-col md:flex-row justify-between items-center text-primary pb-4">
-              <h3 className="text-heading-mobile md:text-heading font-arsenal mb-2 uppercase">
+              <h3 className="text-heading-mobile md:text-heading font-arsenal uppercase">
                 Access Financial Information
               </h3>
             </div>
             <FinanceLink title="View SEC fillings for Willow Lane Acquisition Corp II" />
+          </Link>
+
+          <Link
+            href="/press-releases" target='_blank'
+          >
+            <div className="flex flex-col md:flex-row justify-between items-center text-primary pb-4">
+              <h3 className="text-heading-mobile md:text-heading font-arsenal uppercase">
+                WLII News
+              </h3>
+            </div>
+            <FinanceLink title="Press Releases" />
           </Link>
         </div>
       </section>

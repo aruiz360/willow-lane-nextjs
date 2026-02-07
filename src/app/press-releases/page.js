@@ -9,7 +9,7 @@ export const metadata = {
 export default function InvestorRelations() {
     return (
         <div className="container mx-auto py-8 lg:py-16 px-4 lg:px-0">
-          <Carrousel title="WLAC in the News" slides={slides} />
+          <Carrousel title="WLII in the News" slides={slides} />
         </div>
     )
 }
