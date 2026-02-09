@@ -166,20 +166,24 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-4">
             <GovernanceDocument
-              title="Regulation FD Policy"
-              pdfUrl="/documents/Willow Lane - Regulation FD Policy.pdf"
+              title="Audit Committee Charter"
+              pdfUrl="/uploads/Willow Lane II - Audit Committee Charter.pdf"
             />
             <GovernanceDocument
-              title="Related Person Transactions Policy"
-              pdfUrl="/documents/Willow Lane - Related Person Transactions Policy.pdf"
+              title="Code of Ethics"
+              pdfUrl="/uploads/Willow Lane II - Code of Ethics (01590623-2xA9C08).pdf"
             />
             <GovernanceDocument
-              title="Clawback Compensation Policy"
-              pdfUrl="/documents/Willow Lane - Clawback Compensation Policy.pdf"
+              title="Compensation Committee Charter"
+              pdfUrl="/uploads/Willow Lane II - Compensation Committee Charter (01590630-2xA9C08).pdf"
             />
             <GovernanceDocument
               title="Insider Trading Policy"
-              pdfUrl="/documents/Willow Lane - Insider Trading Policy.pdf"
+              pdfUrl="/uploads/Willow Lane II - Insider Trading Policy (01613505xA9C08).pdf"
+            />
+            <GovernanceDocument
+              title="Related Person Transactions Policy"
+              pdfUrl="/uploads/Willow Lane II - Related Person Transactions Policy (01613502-2xA9C08).pdf"
             />
           </div>
         </div>

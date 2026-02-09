@@ -22,7 +22,7 @@ const team_members = [
     {
       slug: 'maya-hernandez',
       name: 'Maya Hernandez',
-      title: 'Treasurer and Director of Business Development',
+      title: 'Chief Operating Officer',
       description: "Maya is our Chief Operating Officer. She previously served as Treasurer and Director of Business Development for Willow Lane Acquisition Corp I. She was an investor in Andina I and part of the successful Management Team of Andina II and III. She brings extensive experience in SPACs operations and macro-economic analysis.",
       bio: [
         "Maya served as our Chief Operating Officer since December 2025. She also serves as the Treasurer and Director of Business Development for Willow Lane I. From 2021 to 2024, Ms. Hernandez built a personal portfolio of early-stage company private investments. She also served as Board Member and Treasurer of Caring for Colombia Foundation and founded Doulas en Español, a community organization in New York City. From September 2016 to January 2021, she served as Treasurer of Andina III. Ms. Hernandez was Secretary and then Secretary and Treasurer of Andina II from August 2015 to October 2017. She was an initial investor and advisor to Andina I. Prior to this, Ms. Hernandez served as senior currency strategist for Latin America at HSBC Securities (USA) from 2008 to 2015. From 2005 to 2008, she was the lead macro-economic and political analyst for HSBC, covering the Andean region. Previously, Ms. Hernandez was a public policy associate at the Council of the Americas, a forum dedicated to contemporary political, social and economic issues in Latin America."
@@ -105,6 +105,16 @@ const team_members = [
         "Lorne serves as an advisor to the Company. Mr. Weil has served as the Executive Chairman of Inspired Entertainment, Inc. (“Inspired”) since the consummation of its business combination that created the current Inspired Entertainment, Inc. in December 2016. Mr. Weil was the co-sponsor and founder of Inspired's predecessor, Hydra Industries, and served as its Chairman and Chief Executive Officer since its formation in 2014. Mr. Weil has been a principal of Hydra Management, an investment vehicle he formed, since September 2014. Mr. Weil was Chairman of the Board of Scientific Games Corporation (and its predecessor, Autotote Corporation) from October 1991 to November 2013.  In 2011, Mr. Weil was the sponsor and Chairman of the Board of Andina I, and is currently the Chairman of its successor entity, Tecnoglass Inc. Mr. Weil served as Executive Chairman of Leisure Acquisition, a SPAC, from September 2017 until it completed a business combination in June 2021. Mr. Weil also served as the Chief Executive Officer of Scientific Games Corporation from 1992 to 2008 and from November 2010 to November 2013 and as the President from August 1997 to June 2005. Prior to joining Scientific Games, Mr. Weil was President of Lorne Weil, Inc. from 1979 to November 1992. From 1974 to 1979, Mr. Weil was Vice President — Corporate Development at General Instrument Corporation. From 1970 to 1974, Mr. Weil was a manager with the Boston Consulting Group. Mr. Weil received his undergraduate degree from the University of Toronto, an M.S. degree from the London School of Economics and an M.B.A. from Columbia University.",
       ],
       photo: '/team/Lorne Weil Photo.jpg'
+    },
+    {
+      slug: 'leonard-schleicher',
+      name: 'Leonard Schleicher',
+      title: 'Advisor',
+      description: "Mr. Schleicher is an Investment professional with over 19 years of experience in finance where he focused on sourcing, evaluating, and executing new investments.",
+      bio: [
+        "Mr. Schleicher is an Investment professional with over 19 years of experience in finance where he focused on sourcing, evaluating, and executing new investments. Previous roles and experience include Capital Markets, Buy-Side Investment Banking, Private Equity, as well as Mergers and Acquisitions. Prior to his involvement in the financial markets, Mr. Schleicher spent 13 years in industry and manufacturing as a process, project, and development engineer. He received a Bachelor’s degree in Chemical Engineering from the University of Delaware and a Master’s degree in Accounting and Finance with honors from the Kenan-Flagler Business School at the University of North Carolina, Chapel Hill.",
+      ],
+      photo: '/team/Leonard_Schleicher Photo.jpg'
     }
 ];
 
