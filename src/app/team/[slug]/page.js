@@ -12,11 +12,10 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${member.name} | Willow Lane Acquisition Corporation`,
-    description: `Learn about ${member.name}, ${member.title} at Willow Lane Acquisition Corporation.`,
+    title: `${member.name} | Willow Lane Acquisition Corp II`,
+    description: `Learn about ${member.name}, ${member.title} at Willow Lane Acquisition Corp II.`,
   }
 }
-
 
 export default function TeamMemberBio({ params }) {
   const member = teamMembers.find((item) => item.slug === params.slug);
