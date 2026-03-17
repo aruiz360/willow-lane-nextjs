@@ -1,12 +1,5 @@
 const news_articles = [
   {
-    id: 4,
-    image: '/press/pr4.jpg',
-    title: "Heads You Win, Tails You...Also Win: $WLAC",
-    description: "Capped downside, returning SPAC sentiment, and a misunderstood asset underneath.",
-    link: "https://guardianresearch.substack.com/p/heads-you-win-tails-youalso-win-wlac",
-  },
-  {
     id: 3,
     image: '/press/pr3.jpg',
     title: "Boost Run Expands AI Infrastructure Ecosystem with Additional GPU, Data Center, Financing, and Customer Partnerships as it Prepares to Merge with Willow Lane Acquisition Corp.",
