@@ -64,6 +64,26 @@ const FinanceLink = ({title}) => (
   </div>
 );
 
+const FinanceLinkExternal = ({title, pdf}) => (
+  <div className="flex flex-col md:flex-row justify-between items-center border-gray-light border-b pb-4 pt-4">
+    <div>
+      <a
+      className="text-body-mobile md:text-body font-thin"
+      href={"/uploads/" +  pdf + ".pdf"}
+      target="_blank"
+      rel="noopener noreferrer"
+      >
+        {title}
+      </a>
+    </div>
+    <div className="mt-4 md:mt-0 hidden lg:block">
+      <span className="inline-flex items-center gray-light hover:text-light transition-colors duration-200 font-medium">
+        <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
+      </span>
+    </div>
+  </div>
+);
+
 const GovernanceDocument = ({ title, pdfUrl }) => (
   <div className="text-primary border-primary border-b pb-4">
     <a
@@ -153,23 +173,15 @@ export default function Home() {
             <FinanceLink title="View SEC fillings for WILLOW LANE ACQUISITION CORPORATION" />
             <FinanceLink title="Press Releases" />
           </Link>
-          <div className="flex flex-col md:flex-row justify-between items-center border-gray-light border-b pb-4 pt-4">
-            <div>
-              <a
-              className="text-body-mobile md:text-body font-thin"
-              href="/documents/Willow Lane Acquisition Corp 2024 Class A PFIC Annual Information Statement.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-                View 2024 PIFC ANNUAL STATEMENT
-              </a>
-            </div>
-            <div className="mt-4 md:mt-0 hidden lg:block">
-              <span className="inline-flex items-center gray-light hover:text-light transition-colors duration-200 font-medium">
-                <ChevronRightIcon className="w-4 h-4 lg:w-8 lg:h-8" />
-              </span>
-            </div>
-          </div>
+          <FinanceLinkExternal
+            title="View 2024 PIFC ANNUAL STATEMENT"
+            pdf="Willow Lane Acquisition Corp 2024 Class A PFIC Annual Information Statement" />
+          <FinanceLinkExternal
+            title="View 2025 Class A PIFC ANNUAL STATEMENT"
+            pdf="Willow Lane Acquisition Corp. 2025 Class A PFIC Annual Information Statement" />
+          <FinanceLinkExternal
+            title="View 2025 Class B PIFC ANNUAL STATEMENT"
+            pdf="Willow Lane Acquisition Corp. 2025 Class B PFIC Annual Information Statement" />
         </div>
       </section>
 

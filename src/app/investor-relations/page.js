@@ -59,7 +59,15 @@ export default function InvestorRelations() {
           />
           <LinkElement
             linkLabel="PFIC Annual Statement 2024"
-            linkHref="uploads/Willow_Lane_Acquisition_Corp_2024_Class_A_PFIC_Annual_Information_Statement.pdf"
+            linkHref="uploads/Willow Lane Acquisition Corp 2024 Class A PFIC Annual Information Statement.pdf"
+          />
+          <LinkElement
+            linkLabel="PFIC Annual Statement 2025 Class A"
+            linkHref="uploads/Willow Lane Acquisition Corp. 2025 Class A PFIC Annual Information Statement.pdf"
+          />
+          <LinkElement
+            linkLabel="PFIC Annual Statement 2025 Class B"
+            linkHref="uploads/Willow Lane Acquisition Corp. 2025 Class B PFIC Annual Information Statement.pdf"
           />
         </div>
 
