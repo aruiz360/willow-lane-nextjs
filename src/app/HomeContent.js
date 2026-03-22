@@ -154,6 +154,17 @@ export default function Home() {
             </div>
             <FinanceLink title="Press Releases" />
           </Link>
+
+          <Link
+            href="uploads/Willow Lane Acquisition Corp. II 2025 Class B PFIC Annual Information Statement.pdf" target='_blank'
+          >
+            <div className="flex flex-col md:flex-row justify-between items-center text-primary pb-4">
+              <h3 className="text-heading-mobile md:text-heading font-arsenal uppercase">
+                PFIC Annual Statement 2025
+              </h3>
+            </div>
+            <FinanceLink title="View" />
+          </Link>
         </div>
       </section>
 
