@@ -101,6 +101,10 @@ export default function InvestorRelations() {
             linkLabel="Willow Lane Announces Rescheduling of Extraordinary General Meeting of Shareholders to Approve Business Combination with Boost Run"
             linkHref="https://www.prnewswire.com/news-releases/willow-lane-announces-rescheduling-of-extraordinary-general-meeting-of-shareholders-to-approve-business-combination-with-boost-run-302734954.html"
           />
+          <LinkElement
+            linkLabel="Boost Run and Willow Lane Announce Effectiveness of Registration Statement in Connection with Proposed Business Combination"
+            linkHref="https://www.prnewswire.com/news-releases/boost-run-and-willow-lane-announce-effectiveness-of-registration-statement-in-connection-with-proposed-business-combination-302737695.html"
+          />
           <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
