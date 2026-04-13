@@ -105,6 +105,10 @@ export default function InvestorRelations() {
             linkLabel="Boost Run and Willow Lane Announce Effectiveness of Registration Statement in Connection with Proposed Business Combination"
             linkHref="https://www.prnewswire.com/news-releases/boost-run-and-willow-lane-announce-effectiveness-of-registration-statement-in-connection-with-proposed-business-combination-302737695.html"
           />
+          <LinkElement
+            linkLabel="Boost Run Achieves NVIDIA Exemplar Cloud on NVIDIA Blackwell Architecture™, Joining an Elite Tier of Global AI Infrastructure Leaders"
+            linkHref="https://www.prnewswire.com/news-releases/boost-run-achieves-nvidia-exemplar-cloud-on-nvidia-blackwell-architecture-joining-an-elite-tier-of-global-ai-infrastructure-leaders-302740029.html?tc=eml_cleartime"
+          />
           <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
