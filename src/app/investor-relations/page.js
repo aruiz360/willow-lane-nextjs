@@ -113,6 +113,10 @@ export default function InvestorRelations() {
             linkLabel="Boost Run Announces $1.44 Billion Agreement with Dell Technologies to Further Facilitate Enterprise Demand for AI Compute and Storage Infrastructure"
             linkHref="https://www.prnewswire.com/news-releases/boost-run-announces-1-44-billion-agreement-with-dell-technologies-to-further-facilitate-enterprise-demand-for-ai-compute-and-storage-infrastructure-302750194.html?tc=eml_cleartime"
           />
+          <LinkElement
+            linkLabel="Willow Lane Acquisition Corp. Announces No Redemptions in Connection with Business Combination with Boost Run Holdings, LLC"
+            linkHref="https://www.prnewswire.com/news-releases/willow-lane-acquisition-corp-announces-no-redemptions-in-connection-with-business-combination-with-boost-run-holdings-llc-302757171.html?tc=eml_cleartime"
+          />
           <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
