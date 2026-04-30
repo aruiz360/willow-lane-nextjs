@@ -117,6 +117,10 @@ export default function InvestorRelations() {
             linkLabel="Willow Lane Acquisition Corp. Announces No Redemptions in Connection with Business Combination with Boost Run Holdings, LLC"
             linkHref="https://www.prnewswire.com/news-releases/willow-lane-acquisition-corp-announces-no-redemptions-in-connection-with-business-combination-with-boost-run-holdings-llc-302757171.html?tc=eml_cleartime"
           />
+          <LinkElement
+            linkLabel="Willow Lane Acquisition Corp. Announces Shareholder Approval of Business Combination with Boost Run Holdings, LLC"
+            linkHref="https://www.prnewswire.com/news-releases/willow-lane-acquisition-corp-announces-shareholder-approval-of-business-combination-with-boost-run-holdings-llc-302759452.html?tc=eml_cleartime"
+          />
           <Link
             href={`/press-releases`}
             className="text-body-mobile md:text-body text-gray-dark font-thin hover:font-bold hover:text-primary py-3 px-6 transition-all duration-200 font-source"
